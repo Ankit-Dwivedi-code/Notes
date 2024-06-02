@@ -4,7 +4,7 @@
 
         <% if(searchResults != ''){ %>
             <% searchResults.forEach(function (note, index) { %>
-                <a href="https://notes-idi3.onrender.com/dashboard/item/<%= note._id %>">
+                <a href="/dashboard/item/<%= note._id %>">
                 <h4><%= note.title %></h4>
                 </a>
             <% }) %>

@@ -4,6 +4,6 @@ const mainController = require('../controllers/mainController')
 
 
 router.get('/', mainController.homepage);
-router.get('https://notes-idi3.onrender.com/about', mainController.about);
+router.get('/about', mainController.about);
 
 module.exports = router;
