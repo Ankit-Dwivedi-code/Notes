@@ -3,7 +3,7 @@
     <div class="col">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="/dashboard">Dashboard</a></li>
+          <li class="breadcrumb-item"><a href="https://notes-idi3.onrender.com/dashboard">Dashboard</a></li>
           <li class="breadcrumb-item active"><%= note.title %></li>
         </ol>
       </nav>
@@ -24,7 +24,7 @@
     </div>
   </div>
 
-  <form action="/dashboard/item/<%= noteId %>?_method=PUT" method="POST" class="position-relative">
+  <form action="https://notes-idi3.onrender.com/dashboard/item/<%= noteId %>?_method=PUT" method="POST" class="position-relative">
 
     <div class="form-group mb-4 position-absolute" style="left: 1px; top: 1px; right: 1px;">
         <input type="text" class="form-control fw-bold border-0 fs-4" id="title" name="title" value="<%= note.title %>" placeholder="Title">
@@ -65,7 +65,7 @@
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
           Close
         </button>
-        <form action="/dashboard/item-delete/<%= noteId %>?_method=DELETE" method="POST" class="position-relative">
+        <form action="https://notes-idi3.onrender.com/dashboard/item-delete/<%= noteId %>?_method=DELETE" method="POST" class="position-relative">
         
             <button type="submit" class="btn btn-primary">Delete Note</button>
         </form>
